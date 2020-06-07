@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC78D53824825E8E00131F80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78D53724825E8E00131F80 /* AppDelegate.swift */; };
+		FC78D53A24825E8E00131F80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78D53924825E8E00131F80 /* SceneDelegate.swift */; };
+		FC78D53C24825E8E00131F80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78D53B24825E8E00131F80 /* ViewController.swift */; };
+		FC78D53F24825E8E00131F80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC78D53D24825E8E00131F80 /* Main.storyboard */; };
+		FC78D54124825EA600131F80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC78D54024825EA600131F80 /* Assets.xcassets */; };
+		FC78D54424825EA700131F80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC78D54224825EA700131F80 /* LaunchScreen.storyboard */; };
+		FC78D54F24825EA800131F80 /* Lemotif_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78D54E24825EA800131F80 /* Lemotif_testTests.swift */; };
+		FC78D55A24825EA800131F80 /* Lemotif_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78D55924825EA800131F80 /* Lemotif_testUITests.swift */; };
+		FC78D5682483E5BF00131F80 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78D5672483E5BF00131F80 /* SecondViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC78D54B24825EA800131F80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC78D52C24825E8E00131F80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC78D53324825E8E00131F80;
+			remoteInfo = Lemotif_test;
+		};
+		FC78D55624825EA800131F80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC78D52C24825E8E00131F80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC78D53324825E8E00131F80;
+			remoteInfo = Lemotif_test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC78D53424825E8E00131F80 /* Lemotif_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lemotif_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC78D53724825E8E00131F80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC78D53924825E8E00131F80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FC78D53B24825E8E00131F80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC78D53E24825E8E00131F80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC78D54024825EA600131F80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC78D54324825EA700131F80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC78D54524825EA700131F80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC78D54A24825EA800131F80 /* Lemotif_testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lemotif_testTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC78D54E24825EA800131F80 /* Lemotif_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lemotif_testTests.swift; sourceTree = "<group>"; };
+		FC78D55024825EA800131F80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC78D55524825EA800131F80 /* Lemotif_testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lemotif_testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC78D55924825EA800131F80 /* Lemotif_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lemotif_testUITests.swift; sourceTree = "<group>"; };
+		FC78D55B24825EA800131F80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC78D5672483E5BF00131F80 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC78D53124825E8E00131F80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC78D54724825EA800131F80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC78D55224825EA800131F80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC78D52B24825E8E00131F80 = {
+			isa = PBXGroup;
+			children = (
+				FC78D53624825E8E00131F80 /* Lemotif_test */,
+				FC78D54D24825EA800131F80 /* Lemotif_testTests */,
+				FC78D55824825EA800131F80 /* Lemotif_testUITests */,
+				FC78D53524825E8E00131F80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC78D53524825E8E00131F80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC78D53424825E8E00131F80 /* Lemotif_test.app */,
+				FC78D54A24825EA800131F80 /* Lemotif_testTests.xctest */,
+				FC78D55524825EA800131F80 /* Lemotif_testUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC78D53624825E8E00131F80 /* Lemotif_test */ = {
+			isa = PBXGroup;
+			children = (
+				FC78D53724825E8E00131F80 /* AppDelegate.swift */,
+				FC78D53924825E8E00131F80 /* SceneDelegate.swift */,
+				FC78D53B24825E8E00131F80 /* ViewController.swift */,
+				FC78D5672483E5BF00131F80 /* SecondViewController.swift */,
+				FC78D53D24825E8E00131F80 /* Main.storyboard */,
+				FC78D54024825EA600131F80 /* Assets.xcassets */,
+				FC78D54224825EA700131F80 /* LaunchScreen.storyboard */,
+				FC78D54524825EA700131F80 /* Info.plist */,
+			);
+			path = Lemotif_test;
+			sourceTree = "<group>";
+		};
+		FC78D54D24825EA800131F80 /* Lemotif_testTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC78D54E24825EA800131F80 /* Lemotif_testTests.swift */,
+				FC78D55024825EA800131F80 /* Info.plist */,
+			);
+			path = Lemotif_testTests;
+			sourceTree = "<group>";
+		};
+		FC78D55824825EA800131F80 /* Lemotif_testUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC78D55924825EA800131F80 /* Lemotif_testUITests.swift */,
+				FC78D55B24825EA800131F80 /* Info.plist */,
+			);
+			path = Lemotif_testUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC78D53324825E8E00131F80 /* Lemotif_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC78D55E24825EA800131F80 /* Build configuration list for PBXNativeTarget "Lemotif_test" */;
+			buildPhases = (
+				FC78D53024825E8E00131F80 /* Sources */,
+				FC78D53124825E8E00131F80 /* Frameworks */,
+				FC78D53224825E8E00131F80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lemotif_test;
+			productName = Lemotif_test;
+			productReference = FC78D53424825E8E00131F80 /* Lemotif_test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC78D54924825EA800131F80 /* Lemotif_testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC78D56124825EA800131F80 /* Build configuration list for PBXNativeTarget "Lemotif_testTests" */;
+			buildPhases = (
+				FC78D54624825EA800131F80 /* Sources */,
+				FC78D54724825EA800131F80 /* Frameworks */,
+				FC78D54824825EA800131F80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC78D54C24825EA800131F80 /* PBXTargetDependency */,
+			);
+			name = Lemotif_testTests;
+			productName = Lemotif_testTests;
+			productReference = FC78D54A24825EA800131F80 /* Lemotif_testTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC78D55424825EA800131F80 /* Lemotif_testUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC78D56424825EA800131F80 /* Build configuration list for PBXNativeTarget "Lemotif_testUITests" */;
+			buildPhases = (
+				FC78D55124825EA800131F80 /* Sources */,
+				FC78D55224825EA800131F80 /* Frameworks */,
+				FC78D55324825EA800131F80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC78D55724825EA800131F80 /* PBXTargetDependency */,
+			);
+			name = Lemotif_testUITests;
+			productName = Lemotif_testUITests;
+			productReference = FC78D55524825EA800131F80 /* Lemotif_testUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC78D52C24825E8E00131F80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Irene Lee";
+				TargetAttributes = {
+					FC78D53324825E8E00131F80 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					FC78D54924825EA800131F80 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FC78D53324825E8E00131F80;
+					};
+					FC78D55424825EA800131F80 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = FC78D53324825E8E00131F80;
+					};
+				};
+			};
+			buildConfigurationList = FC78D52F24825E8E00131F80 /* Build configuration list for PBXProject "Lemotif_test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC78D52B24825E8E00131F80;
+			productRefGroup = FC78D53524825E8E00131F80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC78D53324825E8E00131F80 /* Lemotif_test */,
+				FC78D54924825EA800131F80 /* Lemotif_testTests */,
+				FC78D55424825EA800131F80 /* Lemotif_testUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC78D53224825E8E00131F80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC78D54424825EA700131F80 /* LaunchScreen.storyboard in Resources */,
+				FC78D54124825EA600131F80 /* Assets.xcassets in Resources */,
+				FC78D53F24825E8E00131F80 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC78D54824825EA800131F80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC78D55324825EA800131F80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC78D53024825E8E00131F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC78D5682483E5BF00131F80 /* SecondViewController.swift in Sources */,
+				FC78D53C24825E8E00131F80 /* ViewController.swift in Sources */,
+				FC78D53824825E8E00131F80 /* AppDelegate.swift in Sources */,
+				FC78D53A24825E8E00131F80 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC78D54624825EA800131F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC78D54F24825EA800131F80 /* Lemotif_testTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC78D55124825EA800131F80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC78D55A24825EA800131F80 /* Lemotif_testUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC78D54C24825EA800131F80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC78D53324825E8E00131F80 /* Lemotif_test */;
+			targetProxy = FC78D54B24825EA800131F80 /* PBXContainerItemProxy */;
+		};
+		FC78D55724825EA800131F80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC78D53324825E8E00131F80 /* Lemotif_test */;
+			targetProxy = FC78D55624825EA800131F80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC78D53D24825E8E00131F80 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC78D53E24825E8E00131F80 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC78D54224825EA700131F80 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC78D54324825EA700131F80 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC78D55C24825EA800131F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC78D55D24825EA800131F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC78D55F24825EA800131F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lemotif_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "May2019.Lemotif-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC78D56024825EA800131F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lemotif_test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "May2019.Lemotif-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC78D56224825EA800131F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lemotif_testTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "May2019.Lemotif-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lemotif_test.app/Lemotif_test";
+			};
+			name = Debug;
+		};
+		FC78D56324825EA800131F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lemotif_testTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "May2019.Lemotif-testTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lemotif_test.app/Lemotif_test";
+			};
+			name = Release;
+		};
+		FC78D56524825EA800131F80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lemotif_testUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "May2019.Lemotif-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Lemotif_test;
+			};
+			name = Debug;
+		};
+		FC78D56624825EA800131F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Lemotif_testUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "May2019.Lemotif-testUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Lemotif_test;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC78D52F24825E8E00131F80 /* Build configuration list for PBXProject "Lemotif_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC78D55C24825EA800131F80 /* Debug */,
+				FC78D55D24825EA800131F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC78D55E24825EA800131F80 /* Build configuration list for PBXNativeTarget "Lemotif_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC78D55F24825EA800131F80 /* Debug */,
+				FC78D56024825EA800131F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC78D56124825EA800131F80 /* Build configuration list for PBXNativeTarget "Lemotif_testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC78D56224825EA800131F80 /* Debug */,
+				FC78D56324825EA800131F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC78D56424825EA800131F80 /* Build configuration list for PBXNativeTarget "Lemotif_testUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC78D56524825EA800131F80 /* Debug */,
+				FC78D56624825EA800131F80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC78D52C24825E8E00131F80 /* Project object */;
+}
