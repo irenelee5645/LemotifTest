@@ -16,6 +16,7 @@
 		FC78D54F24825EA800131F80 /* Lemotif_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78D54E24825EA800131F80 /* Lemotif_testTests.swift */; };
 		FC78D55A24825EA800131F80 /* Lemotif_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78D55924825EA800131F80 /* Lemotif_testUITests.swift */; };
 		FC78D5682483E5BF00131F80 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78D5672483E5BF00131F80 /* SecondViewController.swift */; };
+		FC78D56C2498559700131F80 /* ImageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC78D56B2498559700131F80 /* ImageHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FC78D55924825EA800131F80 /* Lemotif_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lemotif_testUITests.swift; sourceTree = "<group>"; };
 		FC78D55B24825EA800131F80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC78D5672483E5BF00131F80 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		FC78D56B2498559700131F80 /* ImageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				FC78D54024825EA600131F80 /* Assets.xcassets */,
 				FC78D54224825EA700131F80 /* LaunchScreen.storyboard */,
 				FC78D54524825EA700131F80 /* Info.plist */,
+				FC78D56B2498559700131F80 /* ImageHandler.swift */,
 			);
 			path = Lemotif_test;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC78D56C2498559700131F80 /* ImageHandler.swift in Sources */,
 				FC78D5682483E5BF00131F80 /* SecondViewController.swift in Sources */,
 				FC78D53C24825E8E00131F80 /* ViewController.swift in Sources */,
 				FC78D53824825E8E00131F80 /* AppDelegate.swift in Sources */,

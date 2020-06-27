@@ -26,6 +26,7 @@
                                         <state key="normal" title="Run"/>
                                         <connections>
                                             <action selector="makeCall:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ID-ho-cMg"/>
+                                            <segue destination="fCo-91-4Hr" kind="show" id="8Vk-7A-XzX"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZCT-KD-OVD">
@@ -90,12 +91,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="image1" destination="Msn-LI-dKe" id="PpX-2S-rMe"/>
-                        <outlet property="image2" destination="0bA-ZV-8RE" id="XO3-Lp-zqE"/>
-                        <outlet property="image3" destination="Wea-i9-55K" id="eG5-1J-G20"/>
-                        <outlet property="text1" destination="94e-qO-bF0" id="aRw-06-AMe"/>
-                        <outlet property="text2" destination="eD1-Mg-d6N" id="YKh-07-Uae"/>
-                        <outlet property="text3" destination="Uet-14-ZgH" id="6Ip-Wz-7hd"/>
+                        <outlet property="image1" destination="Msn-LI-dKe" id="rtu-pY-PSe"/>
+                        <outlet property="image2" destination="0bA-ZV-8RE" id="Hoy-mI-4l4"/>
+                        <outlet property="image3" destination="Wea-i9-55K" id="ZH5-y0-ovU"/>
+                        <outlet property="text1" destination="94e-qO-bF0" id="xYc-ap-v8p"/>
+                        <outlet property="text2" destination="eD1-Mg-d6N" id="uSw-nd-E8W"/>
+                        <outlet property="text3" destination="Uet-14-ZgH" id="656-PY-zZ5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -107,35 +108,37 @@
             <objects>
                 <viewController id="fCo-91-4Hr" customClass="SecondViewController" customModule="Lemotif_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A8m-AQ-tjL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" id="Oqq-g3-q4H">
+                                <rect key="frame" x="0.0" y="12" width="414" height="818"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EbX-Xk-m3U">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aku-ca-N5v">
+                                        <rect key="frame" x="0.0" y="272.5" width="414" height="273"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Pf-SQ-kBs">
+                                        <rect key="frame" x="0.0" y="545.5" width="414" height="272.5"/>
+                                    </imageView>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="dOm-ck-zMJ"/>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="36l-TP-vyd"/>
                     </view>
                     <navigationItem key="navigationItem" id="6u9-g7-cf4"/>
                     <connections>
-                        <outlet property="view1" destination="Msn-LI-dKe" id="3lF-Ag-G4v"/>
-                        <outlet property="view2" destination="0bA-ZV-8RE" id="OvF-9E-nQB"/>
-                        <outlet property="view3" destination="Wea-i9-55K" id="cJK-39-p8C"/>
+                        <outlet property="view1" destination="EbX-Xk-m3U" id="WgD-sI-Izt"/>
+                        <outlet property="view2" destination="aku-ca-N5v" id="Lld-yf-FnE"/>
+                        <outlet property="view3" destination="1Pf-SQ-kBs" id="eMj-2Y-3CD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CmI-3q-IHv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" id="Oqq-g3-q4H">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EbX-Xk-m3U">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aku-ca-N5v">
-                            <rect key="frame" x="0.0" y="272.5" width="414" height="273"/>
-                        </imageView>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Pf-SQ-kBs">
-                            <rect key="frame" x="0.0" y="545.5" width="414" height="272.5"/>
-                        </imageView>
-                    </subviews>
-                    <viewLayoutGuide key="safeArea" id="dOm-ck-zMJ"/>
-                </stackView>
             </objects>
             <point key="canvasLocation" x="836" y="74"/>
         </scene>

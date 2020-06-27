@@ -15,48 +15,110 @@ class ViewController: UIViewController {
     @IBOutlet weak var text2: UILabel!
     @IBOutlet weak var text3: UILabel!
     
+    
+    
+    
+    
     @IBOutlet weak var image1: UIImageView!
     @IBOutlet weak var image2: UIImageView!
     @IBOutlet weak var image3: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        sampleImageLoad()
+       sampleImageLoad()
         // Do any additional setup after loading the view.
     }
-   static var motifImageList: [UIImage] = Array()
+    var motifImageList: [UIImage] = Array()
     
     
     
     
-    var receivedData: Data?
-    var receivedDataString : String?
-    var callSuccess = false
-    var decodedimage: UIImage? = nil
+     var receivedData: Data?
+     var receivedDataString : String?
+     var callSuccess = false
+  //  var decodedimage: UIImage? = nil
 
+    
     @IBAction func makeCall(_ sender: Any) {
         jsonCall_1()
         while !callSuccess { }
+        //jsonDataCheck()
         jsonCall_decode()
-        if !ViewController.motifImageList.isEmpty {
-            image1.image = ViewController.motifImageList[0]
-            image2.image = ViewController.motifImageList[1]
-            image3.image = ViewController.motifImageList[2]
+        //jsonToMap()
+       // simpleDecode()
+       // print(receivedDataString)
+        if !motifImageList.isEmpty {
+            print("uploading images")
+            image1.image = motifImageList[0]
+            image2.image = motifImageList[1]
+            image3.image = motifImageList[2]
         }
         
         callSuccess = false
     }
+    
+     func jsonDataCheck() {
+        print("***\nstart\n\n")
+        var stringList = receivedDataString?.components(separatedBy: ["[","]", "\"", ","])
+        for s in stringList! {
+            print("\n")
+            print("* \(s)")
+        }
+
+        
+        
+    }
+    
+    func jsonToMap(){
+        var stringList = receivedDataString?.components(separatedBy: ["[","]", "\"",","])
+        var option: Int = 0;
+        var motifs: [String] = [String]()
+        var combinedMotifs: [String] = [String]()
+        for s in stringList! {
+            if s.lengthOfBytes(using: .utf8) < 100 {
+                continue;
+            }
+            if combinedMotifs.isEmpty {
+                combinedMotifs.append(s)
+            } else {
+                motifs.append(s)
+            }
+        }
+        for m in motifs {
+             let newImage = toImage(inputString: m)
+             if newImage != nil {
+                 motifImageList.append(newImage!)
+                  print("success!")
+             } else {
+                print("error with decodedData")
+            }
+
+        }
+        
+    }
+    
+    
+    func simpleDecode() {
+        var motifDictionary = convertToDict2()
+        for motifval in motifDictionary?["motifs"] as! Array<String> {
+           
+            let newImage = toImage(inputString: motifval)
+            if newImage != nil {
+                motifImageList.append(newImage!)
+                 print("success!")
+            } else {
+               print("error with decodedData")
+           }
+        }
+    }
+    
     func jsonCall_decode(){
-        //var myData = NSData(data : receivedData!)
         print("inside jsonCall_decode")
-        //print(myData)
-        //let tempString = "\n\n" + receivedDataString! + "\n\n"
-        //print(tempString)
         var motifDictionary = convertToDictionary(text: receivedDataString!)
         
         
         //second Dictionary -- refined
         var motifDictionary_2 = ["topics": [""], "emotions" : [""]]
-        var motifImageList: [UIImage] = Array()
+        //var motifImageList: [UIImage] = Array()
         
         
         //Create a temp array with topic list
@@ -72,7 +134,6 @@ class ViewController: UIViewController {
 
         }
         motifDictionary_2["topics"] = itemArray
-        //print(motifDictionary_2["topics"])
         
         //Create a temp aray with emoton list
         tempNSArray = motifDictionary?["emotions"] as! NSArray
@@ -91,30 +152,33 @@ class ViewController: UIViewController {
         text2.text = motifDictionary_2["topics"]![1] + "   " + motifDictionary_2["emotions"]![1]
         text3.text = motifDictionary_2["topics"]![2] + "   " + motifDictionary_2["emotions"]![2]
 
-
-
-        //Create a temp aray with motif list
-        print("type of motifDictionary['motifs']")
-        print(type(of: motifDictionary?["motifs"]))
-        //print("the raw data in motifDictionary?[\"motifs\"]")
-        //print(motifDictionary?["motifs"])
         for motifval in motifDictionary?["motifs"] as! Array<String> {
+            ImageHandler.motifString.append(motifval)
             let newImage = toImage(inputString: motifval)
             if newImage != nil {
                 motifImageList.append(newImage!)
-                 print("success!")
+                ImageHandler.motifImageList.append(newImage!)
+                 print("success! -- added to the list")
             } else {
                print("error with decodedData")
            }
         }
+        ImageHandler.callReady = true
+ 
     }
     
     
     func toImage(inputString: String) -> UIImage? {
-        let base64 = inputString.components(separatedBy: ",")
+        var todecode = inputString
+        if inputString.contains(","){
+            let base64 = inputString.components(separatedBy: ",")
+            todecode = base64[1]
+        }
+       // print("inputString : \n \(inputString)\n")
+
        
        print("\n\n trying to convert the string to png -- inside toImage function")
-       let decodedData = Data(base64Encoded: base64[1], options: [])
+       let decodedData = Data(base64Encoded: todecode, options: [])
         if decodedData != nil{
             print("success!! returning u=UIImage")
             return UIImage(data: decodedData!)
@@ -128,7 +192,7 @@ class ViewController: UIViewController {
     }
 
     
-    func convertToDictionary(text: String) -> [String: Any]? {
+     func convertToDictionary(text: String) -> [String: Any]? {
         if let data = text.data(using: .utf8) {
             do {
                 return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
@@ -139,14 +203,21 @@ class ViewController: UIViewController {
         return nil
     }
     
-    
+    func convertToDict2() -> [String: Any]? {
+        do {
+            return try JSONSerialization.jsonObject(with: receivedData!, options: []) as? [String: Any]
+        } catch {
+            print(error.localizedDescription)
+        }
+        return nil
+    }
     
     
     
     
     //makes JSON object
     //should also change Info.plist
-    func jsonCall_1(){
+     func jsonCall_1(){
         let textToSend: [String?] = ["happy day with family", "rest after workout", "fun day with friends"]
         //declare parameter as a dictionary which contains string as key and value combination. considering inputs are valid
 
@@ -189,9 +260,7 @@ class ViewController: UIViewController {
                         print("json string = \(jsonString)")
                         
                         //handle json
-                       
-                        
-                        
+                                               
                         
                         if let json = try JSONSerialization.jsonObject(with: data as Data, options: []) as? [String: Any] {
                             self.receivedData = data
@@ -215,7 +284,7 @@ class ViewController: UIViewController {
     }
     
     
-    
+
     
     
     func sampleImageLoad(){
@@ -244,5 +313,6 @@ class ViewController: UIViewController {
             print("error with decodedData ==> same image load failure")
         }
     }
+ 
 }
 
